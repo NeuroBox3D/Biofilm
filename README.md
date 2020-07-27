@@ -1,37 +1,62 @@
-## Welcome to GitHub Pages
+# Biofilm Plugin
 
-You can use the [editor on GitHub](https://github.com/NeuroBox3D/Biofilm/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
+Bead-Evaluator: [ ![Download Bead-Evaluator](https://api.bintray.com/packages/miho/VRL/VRL-Biofilm-Plugin/images/download.svg) ](https://bintray.com/miho/VRL/download_file?file_path=edu%2Fgcsc%2Fvrl%2Fbiofilm%2Fvrl-biofilm-plugin%2F1.0%2Fvrl-projects%2Fbead-evaluator.vrlp) Biofilm Plugin:   [ ![Download Plugin](https://api.bintray.com/packages/miho/VRL/VRL-Biofilm-Plugin/images/download.svg) ](https://bintray.com/miho/VRL/VRL-Biofilm-Plugin/_latestVersion)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This repository contains the source code of the VRL-Studio plugin developed for the publication [Development of a new bead movement based computational framework shows bacterial amyloid curli reduces bead mobility in biofilms](https://jb.asm.org/content/early/2020/06/23/JB.00253-20/article-info).
 
-### Markdown
+### Using the Bead-Evaluator:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- Install [VRL-Studio](https://vrl-studio.mihosoft.eu)
+- Open the [bead-evaluator.vrlp](https://bintray.com/miho/VRL/download_file?file_path=edu%2Fgcsc%2Fvrl%2Fbiofilm%2Fvrl-biofilm-plugin%2F1.0%2Fvrl-projects%2Fbead-evaluator.vrlp) project in VRL-Studio
+- Set paths and properties and invoke the desired computation
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+![Screenshot](https://github.com/NeuroBox3D/Biofilm/blob/master/help/resources/img/bead-evaluator-1.0.png)
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+## How To Build The Plugin
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 1. Dependencies
 
-### Jekyll Themes
+- JDK >= 1.8 (tested with JDK 8-13)
+- Internet Connection (other dependencies will be downloaded automatically)
+- Optional: IDE with [Gradle](http://www.gradle.org/) support
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/NeuroBox3D/Biofilm/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+### 2. Configuration (Optional)
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If the plugin shall be installed to a custom destination, specify the path in `build.properties`, e.g.,
+    
+    # vrl property folder location (plugin destination)
+    vrldir=/path/to/.vrl/0.4.4/myvrl
+    
+Otherwise, the plugin will be installed to the default location (depends on VRL version that is specified in the gradle dependencies).
+
+### 3. Build & Install
+
+#### IDE
+
+To build the project from an IDE do the following:
+
+- open the  [Gradle](http://www.gradle.org/) project
+- call the `installVRLPlugin` Gradle task to build and install the plugin
+- restart VRL-Studio
+
+#### Command Line
+
+Building the project from the command line is also possible.
+
+Navigate to the project folder and call the `installVRLPlugin` [Gradle](http://www.gradle.org/)
+task to build and install the plugin.
+
+##### Bash (Linux/OS X/Cygwin/other Unix-like OS)
+
+    cd Path/To/Biofilm
+    bash ./gradlew installVRLPlugin
+    
+##### Windows (CMD)
+
+    cd Path\To\Biofilm
+    gradlew installVRLPlugin
