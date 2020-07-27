@@ -15,7 +15,6 @@ This repository contains the source code of the VRL-Studio plugin developed for 
 
 
 
-
 ## How To Build The Plugin
 
 ### 1. Dependencies
