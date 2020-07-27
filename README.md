@@ -7,7 +7,7 @@ This repository contains the source code of the VRL-Studio plugin developed for 
 ### Using the Bead-Evaluator:
 
 - Install [VRL-Studio](https://vrl-studio.mihosoft.eu)
-- Open the bead-evaluator.vrlp project in VRL-Studio
+- Open the [bead-evaluator.vrlp](https://bintray.com/miho/VRL/download_file?file_path=edu%2Fgcsc%2Fvrl%2Fbiofilm%2Fvrl-biofilm-plugin%2F1.0%2Fvrl-projects%2Fbead-evaluator.vrlp) project in VRL-Studio
 - Set paths and properties and invoke the desired computation
 
 
