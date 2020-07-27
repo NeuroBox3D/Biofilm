@@ -11,7 +11,7 @@ This repository contains the source code of the VRL-Studio plugin developed for 
 - Set paths and properties and invoke the desired computation
 
 
-![Screenshot](https://github.com/NeuroBox3D/Biofilm/blob/master/help/resources/img/bead-evaluator-1.0.png)
+![Screenshot](https://github.com/NeuroBox3D/Biofilm/blob/gh-pages/help/resources/img/bead-evaluator-1.0.png)
 
 
 
