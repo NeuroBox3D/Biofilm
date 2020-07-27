@@ -1,8 +1,6 @@
 /* 
- * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- *
  * Copyright (c) 2015–2020 G-CSC, Uni Frankfurt
- * 
+ *
  * This file is part of Visual Reflection Library (VRL).
  *
  * VRL is free software: you can redistribute it and/or modify
@@ -48,8 +46,16 @@
  * a framework for declarative GUI programming on the Java platform.
  * Computing and Visualization in Science, 2013, 16(4),
  * 181–192. http://doi.org/10.1007/s00791-014-0230-y
+ *
+ * K. Malhotra, T. Hunter, B Henry, Y. Ishmail, P. Gaddameedi, 
+ * S. Tursi, Ç. Tükel, M. Hoffer, B. A. Buttaro, G. Queisser. 
+ * Development of a new bead movement based computational framework shows
+ * bacterial amyloid curli reduces bead mobility in biofilms. 
+ * American Society for Microbiology Journals, 2020.
+ * https://doi.org/10.1128/JB.00253-20
  */
 package edu.gcsc.vrl.biofilm;
+import edu.gcsc.vrl.densityvis.ImageVoxels;
 import eu.mihosoft.vrl.annotation.ObjectInfo;
 import java.io.File;
 import java.util.ArrayList;

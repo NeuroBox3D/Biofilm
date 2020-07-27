@@ -25,16 +25,6 @@
  * authors and should not be interpreted as representing official policies, either expressed
  * or implied, of Michael Hoffer <info@michaelhoffer.de>.
  */
-apply plugin: 'java'
-
-sourceCompatibility = '1.8'
-targetCompatibility = '1.8'
-[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
-	
-wrapper {
-    gradleVersion = '6.0'
-}
-
 buildscript {
     
     repositories {
@@ -47,9 +37,35 @@ buildscript {
     }
 }
 
+plugins {
+//    id 'com.github.hierynomus.license' version '0.13.1'
+    id 'maven-publish'
+    id 'net.nemerosa.versioning' version '2.6.1'
+    id 'com.jfrog.bintray' version '1.8.5'
+    id 'com.github.ben-manes.versions' version '0.13.0'
+}
+
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+tasks.withType(Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+}
+	
+wrapper {
+    gradleVersion = '6.5.1'
+}
+
 repositories {
     mavenCentral()
     jcenter()
+
+    maven {
+        url "https://dl.bintray.com/miho/VRL"
+    }
 
     // TODO: optionally add custom maven repositories here
 }
@@ -59,6 +75,8 @@ dependencies {
     
     compile (group: 'eu.mihosoft.vrl', name: 'vrl', version: '0.4.4.0.3')
     compile (group: 'eu.mihosoft.vrl', name: 'vrl', version: '0.4.4.0.3', classifier: 'javadoc')
+
+    compile 'eu.mihosoft.vrl.densityvis:vrl-density-vis:0.3'
 
     // TODO: Add dependencies here ...
     // You can read more about how to add dependency here:
@@ -73,6 +91,8 @@ dependencies {
 //    // https://mvnrepository.com/artifact/org.jfree/jfreechart
 //    compile group: 'org.jfree', name: 'jfreechart', version: '1.0.14'
 }
+
+apply from: 'gradle/publishing.gradle'
 
 def loadProperties(String sourceFileName) {
     

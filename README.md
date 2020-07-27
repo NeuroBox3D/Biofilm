@@ -1,6 +1,6 @@
 # Biofilm Plugin
 
-ADD DOWNLOAD BADGE
+[ ![Download](https://api.bintray.com/packages/miho/VRL/VRL-Biofilm-Plugin/images/download.svg) ](https://bintray.com/miho/VRL/VRL-Biofilm-Plugin/_latestVersion)
 
 This repository contains the source code of the VRL-Studio plugin developed for the publication [Development of a new bead movement based computational framework shows bacterial amyloid curli reduces bead mobility in biofilms](https://jb.asm.org/content/early/2020/06/23/JB.00253-20/article-info).
 
