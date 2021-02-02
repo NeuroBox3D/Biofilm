@@ -10,6 +10,7 @@ This repository contains the source code of the VRL-Studio plugin developed for 
 - Open the [bead-evaluator.vrlp](https://bintray.com/miho/VRL/download_file?file_path=edu%2Fgcsc%2Fvrl%2Fbiofilm%2Fvrl-biofilm-plugin%2F1.0%2Fvrl-projects%2Fbead-evaluator.vrlp) project in VRL-Studio
 - Set paths and properties and invoke the desired computation
 
+## Download the powerpoint tutorial [HERE](https://github.com/NeuroBox3D/Biofilm/blob/master/help/resources/img/Bead%20Evaluator%20Biofilm%20Plugin%20Tutorial.pptx)
 ## Video Tutorial
 
 [![Screenshot](https://github.com/NeuroBox3D/Biofilm/blob/master/help/resources/img/Biofilm-play-tutorial.png)](https://ensemble.temple.edu/hapi/v1/contents/ebb438f5-be08-417c-b830-1cc62d39a381/plugin?embedAsThumbnail=false&displayTitle=false&startTime=0&autoPlay=false&hideControls=true&showCaptions=false&width=1280&height=720&displaySharing=false&displayNotes=false&displayAttachments=false&displayLinks=false&displayEmbedCode=false&displayDownloadIcon=false&displayMetaData=false&displayCredits=false&displayCaptionSearch=false&audioPreviewImage=false&displayViewersReport=false&displayAxdxs=false&displayComments=false "BeadEvaluator")
