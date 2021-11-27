@@ -1,16 +1,20 @@
 # Biofilm Plugin
+### For support or additional information feel free to contact Bettina Buttaro (bbuttaro@temple.edu) and Gillian Queisser (gillian.queisser@temple.edu)
 
-Bead-Evaluator: [ ![Download Bead-Evaluator](https://api.bintray.com/packages/miho/VRL/VRL-Biofilm-Plugin/images/download.svg) ](https://bintray.com/miho/VRL/download_file?file_path=edu%2Fgcsc%2Fvrl%2Fbiofilm%2Fvrl-biofilm-plugin%2F1.0%2Fvrl-projects%2Fbead-evaluator.vrlp) Biofilm Plugin:   [ ![Download Plugin](https://api.bintray.com/packages/miho/VRL/VRL-Biofilm-Plugin/images/download.svg) ](https://bintray.com/miho/VRL/VRL-Biofilm-Plugin/_latestVersion)
+Bead-Evaluator: [Bead-Evaluator Project](https://github.com/NeuroBox3D/Biofilm/releases/download/v1.0.0/bead-evaluator.vrlp) Biofilm Plugin:   [Download Plugin](https://github.com/NeuroBox3D/Biofilm/releases/download/v1.0.0/biofilm-plugin.jar)
 
 This repository contains the source code of the VRL-Studio plugin developed for the publication [Development of a new bead movement based computational framework shows bacterial amyloid curli reduces bead mobility in biofilms](https://jb.asm.org/content/early/2020/06/23/JB.00253-20/article-info).
 
 ### Using the Bead-Evaluator:
-
 - Install [VRL-Studio](https://vrl-studio.mihosoft.eu)
-- Open the [bead-evaluator.vrlp](https://bintray.com/miho/VRL/download_file?file_path=edu%2Fgcsc%2Fvrl%2Fbiofilm%2Fvrl-biofilm-plugin%2F1.0%2Fvrl-projects%2Fbead-evaluator.vrlp) project in VRL-Studio
+- Open the [bead-evaluator.vrlp](https://github.com/NeuroBox3D/Biofilm/releases/download/v1.0.0/bead-evaluator.vrlp) project in VRL-Studio
 - Set paths and properties and invoke the desired computation
 
-![Screenshot](/help/resources/img/bead-evaluator-1.0.jpg)
+### Download the slides from the tutorial [HERE.](https://github.com/NeuroBox3D/Biofilm/blob/master/help/resources/img/Bead%20Evaluator%20Biofilm%20Plugin%20Tutorial.pptx)
+
+### Video Tutorial
+
+[![Screenshot](https://github.com/NeuroBox3D/Biofilm/blob/master/help/resources/img/Biofilm-play-tutorial.png)](https://ensemble.temple.edu/hapi/v1/contents/ebb438f5-be08-417c-b830-1cc62d39a381/plugin?embedAsThumbnail=false&displayTitle=false&startTime=0&autoPlay=false&hideControls=true&showCaptions=false&width=1280&height=720&displaySharing=false&displayNotes=false&displayAttachments=false&displayLinks=false&displayEmbedCode=false&displayDownloadIcon=false&displayMetaData=false&displayCredits=false&displayCaptionSearch=false&audioPreviewImage=false&displayViewersReport=false&displayAxdxs=false&displayComments=false "BeadEvaluator")
 
 
 ## How To Build The Plugin
@@ -57,3 +61,5 @@ task to build and install the plugin.
 
     cd Path\To\Biofilm
     gradlew installVRLPlugin
+
+Finally, restart VRL-Studio
